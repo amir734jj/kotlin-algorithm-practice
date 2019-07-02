@@ -11,15 +11,15 @@ class DfsTraverseTest {
         // Arrange
         val root = TreeNode(
                 TreeNode(
-                        TreeNode(1),
-                        5,
-                        TreeNode(2)
-                ),
-                7,
-                TreeNode(
                         TreeNode(3),
-                        6,
+                        2,
                         TreeNode(4)
+                ),
+                1,
+                TreeNode(
+                        TreeNode(6),
+                        5,
+                        TreeNode(7)
                 )
         )
 

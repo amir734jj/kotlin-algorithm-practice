@@ -17,12 +17,12 @@ class DfsTraverse<T>(root: TreeNode<T>) : IDfsTraverse<T> {
         val element = _stack.pop()
         currentValue = element.value
 
-        if (element.left != null) {
-            _stack.push(element.left)
-        }
-
         if (element.right != null) {
             _stack.push(element.right)
+        }
+
+        if (element.left != null) {
+            _stack.push(element.left)
         }
 
         return currentValue
